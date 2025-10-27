@@ -1,0 +1,216 @@
+/* Basic Reset and Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- NEW COLOR PALETTE --- */
+:root {
+    --dark-bg: #0B0C10;
+    --dark-secondary: #1F2833;
+    --light-text: #C5C6C7;
+    --accent-primary: #66FCF1;
+    --accent-secondary: #45A29E;
+}
+/* --- END NEW COLOR PALETTE --- */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+}
+
+/* Navigation Bar */
+header {
+    background: var(--dark-secondary);
+    color: var(--light-text);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 2px solid var(--accent-secondary);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-primary);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--light-text);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-primary);
+}
+
+/* Main Content & Sections */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: var(--dark-secondary);
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-primary);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-secondary);
+    padding-bottom: 0.5rem;
+    color: #fff;
+}
+
+#hero {
+    text-align: center;
+    background: var(--dark-secondary);
+    color: var(--light-text);
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+/* Projects Section */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    border: 1px solid var(--accent-secondary);
+    border-radius: 5px;
+    padding: 1.5rem;
+    background: transparent;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 15px var(--accent-primary);
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-primary);
+}
+
+.project-card a {
+    text-decoration: none;
+    color: var(--accent-primary);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------- CONTACT SECTION ---------------- */
+#contact {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    background-color: var(--dark-secondary);
+    color: var(--light-text);
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    color: var(--accent-primary);
+}
+
+#contact p {
+    font-size: 1rem;
+    color: var(--light-text);
+    margin-bottom: 1.5rem;
+}
+
+/* Contact Buttons */
+.contact-btn {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    text-decoration: none;
+    background-color: var(--accent-secondary);
+    color: var(--dark-bg);
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: var(--accent-primary);
+    color: var(--dark-secondary);
+}
+
+/* Email Info Container */
+#email-info-container {
+    display: none;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+#email-text {
+    width: 100%;
+    padding: 12px;
+    background: var(--dark-bg);
+    color: var(--accent-primary);
+    border: 1px solid var(--accent-secondary);
+    border-radius: 4px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#copy-message {
+    text-align: center;
+    color: var(--light-text);
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--accent-secondary);
+    margin-top: 2rem;
+}

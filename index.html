@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Hello, I'm [Your Name]</h1>
+            <p>A web developer passionate about creating clean and functional websites.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a student and aspiring developer currently learning the fundamentals of web development. 
+                I enjoy solving problems and building new things. This portfolio itself is one of my first projects!
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <p>Here are a few projects I've worked on.</p>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>Project Title 1</h3>
+                    <p>A brief description of your project. What did you build? What technologies did you use?</p>
+                    <a href="#">View Project (Link)</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Project Title 2</h3>
+                    <p>A brief description of your second project. This is a great place to showcase your skills.</p>
+                    <a href="#">View Project (Link)</a>
+                </div>
+
+                </div>
+        </section>
+
+        <!-- <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>You can reach me via email or find me on LinkedIn.</p>
+            <a href="mailto:officialhimanshusen@gmail.com" class="contact-btn">Email Me</a>
+            <a href="https://www.linkedin.com/in/himanshu-sen-codeai/" target="_blank" class="contact-btn">LinkedIn</a>
+        </section> -->
+
+
+
+        <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>You can reach me via email or find me on LinkedIn.</p>
+
+    <!-- Email button -->
+    <a href="#" class="contact-btn" id="email-btn">Email Me</a>
+
+    <!-- LinkedIn button -->
+    <a href="https://www.linkedin.com/in/himanshu-sen-codeai/" 
+       class="contact-btn" target="_blank" rel="noopener noreferrer">
+       LinkedIn
+    </a>
+
+    <!-- Email info container (hidden by default) -->
+    <div id="email-info-container">
+        <input type="text" value="officialhimanshusen@gmail.com" id="email-text" readonly>
+        <p id="copy-message">(Click the email address above to copy)</p>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
